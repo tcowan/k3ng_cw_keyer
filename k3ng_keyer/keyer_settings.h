@@ -1,6 +1,6 @@
 // Initial and hardcoded settings
-#define initial_speed_wpm 26             // "factory default" keyer speed setting
-#define initial_command_mode_speed_wpm 20 // "factory default" command mode speed setting 
+#define initial_speed_wpm 20             // "factory default" keyer speed setting
+#define initial_command_mode_speed_wpm 20 // "factory default" command mode speed setting
 #define initial_sidetone_freq 600        // "factory default" sidetone frequency setting
 #define sidetone_hz_limit_low 299
 #define sidetone_hz_limit_high 2001
@@ -45,9 +45,9 @@
 #define lcd_i2c_address_fdebrander_lcd 0x27                // I2C address of display for FEATURE_LCD_I2C_FDEBRABANDER
 #define lcd_i2c_address_ydv1_lcd 0x27                      // I2C address of display for FEATURE_LCD_YDv1
 //#define lcd_i2c_address_ydv1_lcd 0x38                    // I2C address of display for FEATURE_LCD_YDv1
-#define lcd_i2c_address_sainsmart_lcd 0x27                // I2C address of display for FEATURE_LCD_SAINSMART_I2C 
+#define lcd_i2c_address_sainsmart_lcd 0x27                // I2C address of display for FEATURE_LCD_SAINSMART_I2C
 #define oled_i2c_address_ssd1306 0x3C                     // I2C address of display for FEATURE_OLED_SSD1306
-#define lcd_i2c_address_twiliquidcrystal_lcd 0x27                // I2C address of display for FEATURE_LCD_TWILIQUIDCRYSTAL 
+#define lcd_i2c_address_twiliquidcrystal_lcd 0x27                // I2C address of display for FEATURE_LCD_TWILIQUIDCRYSTAL
 #define hell_pixel_microseconds 4025
 #define program_memory_limit_consec_spaces 1
 #define serial_leading_zeros 1            // set to 1 to activate leading zeros in serial numbers (i.e. #1 = 001)
@@ -67,7 +67,7 @@
 #define tx_key_dit_and_dah_pins_active_state HIGH
 #define tx_key_dit_and_dah_pins_inactive_state LOW
 #define potentiometer_check_interval_ms 150
-#define potentiometer_reading_threshold 1 
+#define potentiometer_reading_threshold 1
 #define default_paddle_interruption_quiet_time_element_lengths 0
 #define default_wordsworth_wordspace 6
 #define default_wordsworth_repetition 1
@@ -75,7 +75,7 @@
 #define eeprom_write_time_ms 30000
 
 #ifdef FEATURE_BUTTONS
-  #define analog_buttons_number_of_buttons 4  // includes the command button (command button + 3 memory buttons = 4)
+  #define analog_buttons_number_of_buttons 2  // includes the command button (command button + 3 memory buttons = 4)
   #define analog_buttons_r1 10
   #define analog_buttons_r2 1
 #endif
@@ -197,7 +197,7 @@
   // #define FEATURE_ETHERNET_MAC {0xDE,0xAD,0xBE,0xEF,0xFE,0xED}
   #define FEATURE_ETHERNET_IP {192,168,1,179}                      // default IP address ("192.168.1.179")
   #define FEATURE_ETHERNET_MAC {0xDE,0xAD,0xBE,0xEF,0xFE,0xEE}
-  #define FEATURE_ETHERNET_DNS {8,8,8,8} 
+  #define FEATURE_ETHERNET_DNS {8,8,8,8}
 
   #define FEATURE_ETHERNET_GATEWAY {192,168,1,1}                   // default gateway
   #define FEATURE_ETHERNET_SUBNET_MASK {255,255,255,0}                  // default subnet mask
@@ -210,7 +210,7 @@
 
 #define FEATURE_INTERNET_LINK_MAX_LINKS 2
 #define FEATURE_INTERNET_LINK_DEFAULT_RCV_UDP_PORT 8888
-#define FEATURE_INTERNET_LINK_BUFFER_TIME_MS 500 
+#define FEATURE_INTERNET_LINK_BUFFER_TIME_MS 500
 #define FEATURE_INTERNET_LINK_SVC_DURING_LOOP_TIME_MS 20
 #define FEATURE_INTERNET_LINK_KEY_DOWN_TIMEOUT_SECS 8
 
@@ -246,15 +246,15 @@
   #define dfrobot_btnUP_analog 250
   #define dfrobot_btnDOWN_analog 450
   #define dfrobot_btnLEFT_analog 650
-  #define dfrobot_btnSELECT_analog 850  
+  #define dfrobot_btnSELECT_analog 850
 
   // For V1.0 board use these values
   // #define dfrobot_btnRIGHT_analog 50
   // #define dfrobot_btnUP_analog 195
   // #define dfrobot_btnDOWN_analog 380
   // #define dfrobot_btnLEFT_analog 555
-  // #define dfrobot_btnSELECT_analog 790  
-  
+  // #define dfrobot_btnSELECT_analog 790
+
   // button to memory mappings (0 = command button, 1 = memory 1, 2 = memory 2, etc.)
   #define dfrobot_btnRIGHT  2
   #define dfrobot_btnUP     1
